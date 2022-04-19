@@ -1,0 +1,251 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background: url("https://static2.bigstockphoto.com/2/3/2/large1500/232426351.jpg") #3e547c;
+  /*FIN FOOTER */
+}
+
+body nav {
+  background-color: rgba(255, 255, 255, 0.89);
+  height: 5em;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+  text-decoration: none;
+}
+
+body nav .titulo {
+  text-decoration: none;
+  font-size: 2.2em;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+body nav .botonVolver {
+  font-size: 1.3em;
+  background-color: #b1b1b1;
+  color: black;
+  padding: 3px 6px;
+  border-radius: 5px;
+  left: 0;
+  position: fixed;
+  text-decoration: none;
+  top: 1em;
+  left: 0.6em;
+}
+
+body nav h1 {
+  font-size: 0.8em;
+  padding: 0px;
+  margin: 0px;
+  top: 0;
+}
+
+body .float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  -webkit-box-shadow: 2px 2px 3px #999;
+          box-shadow: 2px 2px 3px #999;
+  z-index: 10;
+}
+
+body .float:hover {
+  text-decoration: none;
+  color: #25d366;
+  background-color: #fff;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .my-float {
+  margin-top: 16px;
+}
+
+body main {
+  text-align: center;
+  min-height: 100vh;
+}
+
+body main a {
+  display: block;
+  font-size: 2em;
+  background-color: rgba(255, 255, 255, 0.719);
+  text-decoration: none;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  margin: 20px 430px;
+  text-decoration: none;
+  color: black;
+  font-family: 'Titillium Web', sans-serif;
+  border-radius: 2%;
+}
+
+body main a:hover {
+  background-color: black;
+  color: white;
+  -webkit-transition: all 1ms;
+  transition: all 1ms;
+}
+
+body main .container__productos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+body main .container__productos .card {
+  width: 30%;
+  height: 40%;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.87);
+  margin: 20px;
+  text-align: center;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  padding: 10px;
+}
+
+body main .container__productos .card img {
+  width: 300px;
+  height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body main .container__productos .card:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  -webkit-box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+body .footer {
+  width: 100%;
+  height: 2em;
+  background-color: rgba(255, 255, 255, 0.856);
+}
+
+body .footer .grupo-2 {
+  background-color: #d6cfcc;
+  padding: 0.2em;
+  height: 2em;
+  text-align: center;
+}
+
+body .footer .grupo-2 b {
+  font-size: 1em;
+}
+
+@media (max-width: 1100px) {
+  body nav .titulo {
+    font-size: 2.2em;
+    margin-top: 55px;
+  }
+  body nav p {
+    font-size: 1em;
+  }
+  body main a {
+    font-size: 2em;
+    margin: 48px 160px;
+    padding: 3px 3px;
+    width: auto;
+  }
+}
+
+@media (max-width: 530px) {
+  body nav {
+    height: 4em;
+  }
+  body nav .titulo {
+    font-size: 1.6em;
+    margin-top: 55px;
+  }
+  body nav .botonVolver {
+    font-size: 0.8em;
+    background-color: #b1b1b1;
+    color: black;
+    padding: 3px;
+    border-radius: 5px;
+    border: solid 1px black;
+    left: 0;
+    position: fixed;
+    text-decoration: none;
+    top: 1.6em;
+    left: 0.4em;
+  }
+  body nav p {
+    font-size: 1em;
+  }
+  body main a {
+    font-size: 2em;
+    margin: 25px 40px;
+    padding: 3px 3px;
+    width: auto;
+  }
+  body main .container__productos .card {
+    width: 80%;
+    height: 80%;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.87);
+    margin: 20px;
+    text-align: center;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+    padding: 10px;
+  }
+  body main .container__productos .card img {
+    width: 70%;
+    height: 70%;
+    min-width: 280px;
+  }
+  body .footer .grupo-2 {
+    height: 2em;
+    text-align: center;
+    font-size: 0.9em;
+  }
+  body .footer .grupo-2 b {
+    font-size: 1em;
+  }
+}
+/*# sourceMappingURL=syles.css.map */
